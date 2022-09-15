@@ -31,10 +31,12 @@ On opening the url, we land on the welcome page with the title - UFO Sightings. 
 ![image](https://user-images.githubusercontent.com/108366412/190507380-09b5e79f-ddfa-435e-bda0-6b630dba84e9.png)
  
 **Base Table without application of filter criteria:**
+
 The page will further have a table which will show all the UFO sightings included in the data. Note that we have set filter criteria – Date, City, State, Country, and Shape beside the table to filter the data as desired. 
 ![image](https://user-images.githubusercontent.com/108366412/190507430-4ea21c68-b1ed-4ca5-9f83-208bc2c93e51.png)
  
 **Table upon application of filter criteria:**
+
 Upon applying shape filter with “circle” value, we can filter the data with entries only showing UFOs with a circle shape. We are down to just 4 results from a table huge. 
 
 This happens when we type value (“circle” in our case) in the shape placeholder field. The value which we put in, should match the case of the entries in the table. In our table, data is in lower case, hence make sure to put in the search criteria in lower case and press enter. To get the default table back, refresh the page or click the “UFO Sightings” located at the top left corner which also acts as a refresh button. 
@@ -54,7 +56,7 @@ For filtering, we must know the entries included in the data in their required c
 
 ### Recommendation
 
-1.We must know the case the entry is in. Upon first look it seems all data is in lower case but if a value is in uppercase, it may not show up with other lower-case values. In filter search, we must also put in the exact value in exact case without any extra spaces in the beginning or end to get the search result. Below is an example where in instead of putting "us" in lowercase, we have "US" which is uppercase.
+1. We must know the case the entry is in. Upon first look it seems all data is in lower case but if a value is in uppercase, it may not show up with other lower-case values. In filter search, we must also put in the exact value in exact case without any extra spaces in the beginning or end to get the search result. Below is an example where in instead of putting "us" in lowercase, we have "US" which is uppercase.
 ![image](https://user-images.githubusercontent.com/108366412/190508982-14ce2a2a-62aa-478e-b260-93337ba60582.png)
 By including “ignoreCase: false” argument, we can overcome the case sensitivity. We can use “entry => entry.trim()” to ignore any extra spaces before or after the entry. 
  
